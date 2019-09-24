@@ -26,7 +26,7 @@ function send_reply_message($url, $post_header, $post_body)
 if ( sizeof($request_array['events']) > 0 ) {
       foreach ($request_array['events'] as $event) {
       
-      $reply_message = '';
+      $reply_message = 'Hello';
       $reply_token = $event['replyToken'];
       $data = [
          'replyToken' => $reply_token,
